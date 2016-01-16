@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group_preferences">
+        <item
+            android:id="@+id/action_reset_to_default"
+            android:title="@string/reset_to_default"
+            app:showAsAction="never" />
+    </group>
+</menu>

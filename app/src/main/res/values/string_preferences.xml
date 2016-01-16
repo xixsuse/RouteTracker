@@ -1,0 +1,43 @@
+<resources>
+    <string name="preferences">Preferences</string>
+
+    <!-- dwell TimeBeforeCreateLocation -->
+    <string name="pref_locationDwellTime_key">pref_dwellTimesBeforeCreateLocation</string>
+    <string name="pref_locationDwellTime_title">Location dwell time</string>
+    <string name="pref_locationDwellTime_dialogTitle">Select a dwell time</string>
+    <string-array name="pref_locationDwellTime_entries">
+        <item>15 Minutes</item>
+        <item>30 Minutes</item>
+        <item>45 Minutes</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+        <item>4 Hours</item>
+    </string-array>
+    <string-array name="pref_locationDwellTime_entryValues">
+        <item>900000</item>
+        <item>1800000</item>
+        <item>2700000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+        <item>14400000</item>
+    </string-array>
+    <string name="pref_locationDwellTime_defaultValue">3600000</string>
+
+    <string name="pref_fenceradius_key">pref_fenceRadius</string>
+    <string name="pref_fenceradius_title">Tracking fence radius</string>
+    <string name="pref_fenceradius_dialogTitle">Select a radius</string>
+    <string-array name="pref_fenceradius_entries">
+        <item>25 Meters</item>
+        <item>50 Meters</item>
+        <item>100 Meters</item>
+        <item>200 Meters</item>
+    </string-array>
+    <string-array name="pref_fenceradius_entryValues">
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+    <string name="pref_fenceradius_defaultValue">100</string>
+
+</resources>

@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "de.florianm.android.routetracker"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug{
+            minifyEnabled true
+            applicationIdSuffix 'debug'
+            versionNameSuffix 'debug'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.debug.pro'
+        }
+
+        release {
+            minifyEnabled true
+            versionNameSuffix 'release'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // Testing
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile 'org.hamcrest:hamcrest-library:1.3'
+    androidTestCompile 'com.android.support:support-annotations:23.1.1'
+    androidTestCompile 'com.android.support.test:runner:0.4+'
+    androidTestCompile 'com.android.support.test:rules:0.4+'
+    // Google Play Services
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    // Android Support Libraries
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:support-annotations:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:preference-v14:23.1.1'
+    // Other Libraries
+    compile 'com.squareup:otto:1.3.8'
+    compile 'net.danlew:android.joda:2.9.1'
+}

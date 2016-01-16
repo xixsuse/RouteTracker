@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RouteTracker</string>
+    <string name="locations">Locations</string>
+
+    <string name="reset_to_default">Reset to default</string>
+
+    <plurals name="minute">
+        <item quantity="zero">No minute</item>
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+
+    <plurals name="hour">
+        <item quantity="zero">No hour</item>
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+</resources>

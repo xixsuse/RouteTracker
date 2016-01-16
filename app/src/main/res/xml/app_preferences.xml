@@ -1,0 +1,21 @@
+<?xml version="1_0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="@string/pref_locationDwellTime_defaultValue"
+        android:dialogTitle="@string/pref_locationDwellTime_dialogTitle"
+        android:entries="@array/pref_locationDwellTime_entries"
+        android:entryValues="@array/pref_locationDwellTime_entryValues"
+        android:key="@string/pref_locationDwellTime_key"
+        android:summary="%s"
+        android:title="@string/pref_locationDwellTime_title" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_fenceradius_defaultValue"
+        android:dialogTitle="@string/pref_fenceradius_dialogTitle"
+        android:entries="@array/pref_fenceradius_entries"
+        android:entryValues="@array/pref_fenceradius_entryValues"
+        android:key="@string/pref_fenceradius_key"
+        android:summary="%s"
+        android:title="@string/pref_fenceradius_title" />
+
+</PreferenceScreen>

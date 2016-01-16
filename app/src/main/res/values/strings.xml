@@ -15,4 +15,5 @@
         <item quantity="one">%d hour</item>
         <item quantity="other">%d hours</item>
     </plurals>
+    <string name="title_activity_maps">Map</string>
 </resources>

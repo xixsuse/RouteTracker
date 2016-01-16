@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/action_preferences"
-        android:title="@string/preferences"
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_near_me_24dp"
+        android:title="Map"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_preferences"
         android:icon="@drawable/ic_settings_24dp"
-        app:showAsAction="ifRoom"/>
+        android:title="@string/preferences"
+        app:showAsAction="ifRoom" />
 </menu>

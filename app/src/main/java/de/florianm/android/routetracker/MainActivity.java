@@ -98,6 +98,8 @@ public class MainActivity extends GoogleApiClientActivity {
             case R.id.action_preferences:
                 openPreferencesActivity();
                 break;
+            case R.id.action_map:
+                openMapActivity();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -107,6 +109,11 @@ public class MainActivity extends GoogleApiClientActivity {
 
     private void openPreferencesActivity() {
         Intent intent = new Intent(this, AppPreferenceActivity.class);
+        startActivity(intent);
+    }
+
+    private void openMapActivity() {
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
 

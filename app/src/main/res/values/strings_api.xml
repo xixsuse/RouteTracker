@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="maps_api_key">AIzaSyAvcfORRmTWRcCM0Xw13NzgEs09mkKlYvQ</string>
+    <string name="maps_api_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAvcfORRmTWRcCM0Xw13NzgEs09mkKlYvQ</string>
 </resources>

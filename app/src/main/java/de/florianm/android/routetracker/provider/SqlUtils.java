@@ -7,19 +7,21 @@ import org.joda.time.DateTimeZone;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
-public final class SqlUtils {
-    private static final DateTimeFormatter SQL_DATETIME_FMT = DateTimeFormat
-            .forPattern("yyyy-MM-dd HH:mm:ss")
-            .withZone(DateTimeZone.UTC);
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-    public static String formatDateTime(DateTime dateTime) {
+public final class SqlUtils {
+    private static final SimpleDateFormat SQL_DATETIME_FMT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+    public static String formatDateTime(Date dateTime) {
         if (null == dateTime) return null;
-        return SQL_DATETIME_FMT.print(dateTime);
+        return SQL_DATETIME_FMT.format(dateTime);
     }
 
-    public static DateTime parseDateTime(String value) {
+    public static Date parseDateTime(String value) throws ParseException {
         if (TextUtils.isEmpty(value)) return null;
-        return SQL_DATETIME_FMT.parseDateTime(value);
+        return SQL_DATETIME_FMT.parse(value);
     }
 
 }

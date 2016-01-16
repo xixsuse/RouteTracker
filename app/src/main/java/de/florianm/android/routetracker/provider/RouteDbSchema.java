@@ -6,7 +6,7 @@ import android.provider.BaseColumns;
 
 public class RouteDbSchema {
     public static final String AUTHORITY = "de.florianm.android.routetracker.provider";
-    private static final Uri AUTHORITY_URI = Uri.fromParts(ContentResolver.SCHEME_CONTENT, AUTHORITY, null);
+    private static final Uri AUTHORITY_URI = Uri.parse(ContentResolver.SCHEME_CONTENT + "://" + AUTHORITY);
 
     public static abstract class BaseDbTable implements BaseColumns {
         public static final String CREATED_AT = "created_at";
@@ -23,15 +23,14 @@ public class RouteDbSchema {
 
         public static final String LATITUDE = "latitude";
         public static final String LONGITUDE = "longitude";
-        public static final String POINT_TYPE = "point_type";
 
         public static final String[] PROJECTION = {
                 _ID,
                 CREATED_AT,
                 MODIFIED_AT,
+                DELETED_AT,
                 LATITUDE,
-                LONGITUDE,
-                POINT_TYPE
+                LONGITUDE
         };
     }
 }

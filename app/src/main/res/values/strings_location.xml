@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error.location.geofence.notavailable">Geofences are not available</string>
+    <string name="error.location.geofence.toomany">T0o many geofences are created</string>
+    <string name="error.location.geofence.toomanypendingintents">Too many pending geofence intents</string>
+    <string name="error.location.geofence.unknown">Unknown geofence error code:%s</string>
+</resources>

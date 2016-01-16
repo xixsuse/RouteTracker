@@ -23,6 +23,10 @@ public abstract class GoogleApiClientActivity extends AppCompatActivity
     private GoogleApiClient googleApiClient;
     private boolean resolvingError;
 
+    public GoogleApiClient getGoogleApiClient() {
+        return googleApiClient;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

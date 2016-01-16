@@ -36,13 +36,17 @@
             android:exported="false"
             android:label="@string/preferences" />
 
-        <service android:name=".location.GeofenceTransitionsIntentService" />
+        <service android:name=".location.GeofenceTransitionsIntentService">
+            <intent-filter>
+                <action android:name="de.florianm.android.routetracker.location.ACTION_FENCE_TRANSITION"/>
+            </intent-filter>
+        </service>
 
         <provider
             android:name=".provider.RouteContentProvider"
             android:authorities="de.florianm.android.routetracker.provider"
             android:enabled="true"
-            android:exported="false"></provider>
+            android:exported="false"/>
     </application>
 
 </manifest>

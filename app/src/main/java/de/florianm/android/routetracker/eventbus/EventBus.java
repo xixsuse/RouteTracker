@@ -7,6 +7,8 @@ import android.util.Log;
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;
 
+import de.florianm.android.routetracker.RouteTrackerApplication;
+
 /**
  * Otto {@link Bus} that post all event on the main thread.
  */
